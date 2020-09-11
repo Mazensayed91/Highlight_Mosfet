@@ -8,7 +8,7 @@ from PyQt5.QtGui import QIcon, QPixmap
 from subprocess import call
 
 
-class Example(QWidget):
+class Window(QWidget):
 
     def __init__(self):
         super().__init__()
@@ -57,7 +57,7 @@ class Example(QWidget):
 def main():
 
     app = QApplication(sys.argv)
-    ex = Example()
+    ex = Window()
 
     sys.exit(app.exec_())
 
